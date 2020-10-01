@@ -1,0 +1,16 @@
+numero di thread utilizzati=8
+quindi grado di parallelismo =9(ThcercaClasse+ThStampaClasse+main);
+Ogni ThcercaClasse cerca nell'orario di un docente la classe desiderata.
+Il threadStampa riceve il vettore OrarioSettimanale effettua il parse e stampa.
+Se trova la classe ritorna la posizione del contatore e calcola il giorno corrente
+Dopodichè aggiunge l'ora e il giorno all stringa OrarioSettimanale
+
+dati condivisi
+Nei dati condivisi ci sono dei vettori e ognuno contiene l'orario di un professore.
+Poi abbiamo OrarioSettimanale che conterrà l'orario finale di una classe.
+
+La mutua esclusione la abbiamo solo su OrarioSettimanale perchè non vi possono accedere più thread contemporaneamente.
+
+Non abbiamo alcuna sincronizzazione
+
+
